@@ -1,0 +1,32 @@
+{
+  "name": "feathers-populate-hook",
+  "version": "0.0.1",
+  "homepage": "http://feathersjs.com",
+  "description": "Feathers hook to populate multiple fields with n:m, n:1 or 1:m relations.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MichaelErmer/feathers-populate-hook.git"
+  },
+  "keywords": [
+    "feathers",
+    "feathers-plugin",
+    "populate",
+    "relations"
+  ],
+  "main": "lib/populate/index.js",
+  "author": "Feathers <hello@feathersjs.com> (http://feathersjs.com)",
+  "contributors": [
+    "Michael Ermer <michael.ermer@ermer.de> (http://ermer.de)"
+  ],
+  "directories": {
+    "lib": "lib"
+  },
+  "engines": {
+    "node": ">= 5.6.0",
+    "npm": ">= 3.6.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "feathers-errors": "^2.0.1"
+  }
+}
