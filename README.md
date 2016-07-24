@@ -1,5 +1,7 @@
 # feathers-populate-hook
 
+[![NPM](https://nodei.co/npm/feathers-populate-hook.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/feathers-populate-hook/)
+
 Feathers hook to populate multiple fields with n:m, n:1 or 1:m relations.
 
 ## Installation:
