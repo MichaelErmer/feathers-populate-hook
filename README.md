@@ -2,7 +2,7 @@
 
 [![NPM](https://nodei.co/npm/feathers-populate-hook.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/feathers-populate-hook/)
 
-Feathers hook to populate multiple fields with n:m, n:1 or 1:m relations.
+Feathers hook to populate multiple fields with one to many, many to one and many to many relations. (For m:m cascade the populate hooks on a linking service.)
 
 ## Installation:
 
