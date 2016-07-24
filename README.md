@@ -31,11 +31,12 @@ Feathers hook to populate multiple fields with n:m, n:1 or 1:m relations.
      })
    ]
  })
-```javascript
+```
 
 ## Query options
 
 Block some populates from the client:
 set `query.$populate` to `{dontPopulateField: 0}` 
-or 
-set `query.$populate` to `false` to block all populates
+
+Block all populates:
+set `query.$populate` to `false`
