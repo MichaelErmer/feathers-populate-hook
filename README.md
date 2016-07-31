@@ -29,13 +29,24 @@ Feathers hook to populate multiple fields with one to many, many to one and many
          service: 'categories', // Foreign service
          f_key: 'id',  // Foreign key
          l_key: 'categories' // Local key, optional, if different then destination key
-       }
+       },
+        creator: { // Destination key
+          service: 'users', // Foreign service
+          f_key: 'email',  // Foreign key
+          l_key: 'createdByEmail',
+          one: true,
+          query:  {  // defaults to {} but you can specify any other options here
+            $select: ['name','profile_image']
+          }
+        }
      })
    ]
  })
 ```
 
 ## Query options
+
+Set query defaults for the internal service call, i.e. $select, $order
 
 Block some populates from the client:
 set `query.$populate` to `{dontPopulateField: 0}` 
