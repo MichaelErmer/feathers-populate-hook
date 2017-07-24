@@ -12,6 +12,12 @@ Feathers hook to populate multiple fields with one to many, many to one and many
 ```javascript
  const populate = require('feathers-populate-hook');
 
+ messageService.before({
+   all: [
+     populate.compatibility()
+   ]
+ });
+
  messageService.after({
    find: [
      populate({
@@ -52,4 +58,6 @@ Block some populates from the client:
 set `query.$populate` to `{dontPopulateField: 0}` 
 
 Block all populates:
-set `query.$populate` to `false`
+set `query.$populate` to `false` or `0`
+
+You can also use `$populate` as a param.
