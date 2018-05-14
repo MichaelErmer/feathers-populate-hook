@@ -69,3 +69,16 @@ Block all populates:
 set `query.$populate` to `false` or `0`
 
 You can also use `$populate` as a param.
+
+*Remove `populate.compatibility()` hook to disallow the query to modify the behaviour.*
+
+## Disable populate by default
+
+If you want the default behaviour to be `false` add a custom hook:
+```
+function(hook) {
+  hook.params.$populate = !!hook.params.query.$populate;
+  delete hook.params.query.$populate;
+  return hook;
+};
+```
