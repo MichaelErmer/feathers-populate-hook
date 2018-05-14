@@ -45,6 +45,14 @@ Feathers hook to populate multiple fields with one to many, many to one and many
             $select: ['name','profile_image']
           }
         }
+     },
+     { // defaults query/params
+       query: {
+         $foo: true
+       },
+       params: {
+         $bar: true
+       } 
      })
    ]
  })
