@@ -1,0 +1,68 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "no-console": "warn",
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "function",
+        "next": "*"
+      }
+    ],
+    "newline-per-chained-call": [
+      "error"
+    ],
+    "no-undef-init": "error",
+    "spaced-comment": "error",
+    "switch-colon-spacing": "error",
+    "no-tabs": "error",
+    "no-nested-ternary": "error",
+    "no-multiple-empty-lines": "error",
+    "no-whitespace-before-property": "error",
+    "new-cap": "error",
+    "lines-around-comment": "error",
+    "key-spacing": "error",
+    "comma-style": "error",
+    "brace-style": "error",
+    "camelcase": "error",
+    "handle-callback-err": "error",
+    "no-new-require": "warn",
+    "no-sync": "warn",
+    "no-mixed-requires": "error",
+    "global-require": "error",
+    "comma-spacing": "error",
+    "eqeqeq": "error",
+    "curly": "error",
+    "keyword-spacing": "error",
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "object-curly-newline": [
+      "error",
+      { "multiline": true }
+    ],
+    "indent": [
+      "error",
+      2
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ]
+  }
+}
